@@ -28,7 +28,7 @@ class controleUsuarios:
     id = int(input("Isira o ID do usuário a ser removido: "))
 
     for usuario in self.listaUsuarios:
-      if id == self.usuario.id:
+      if id == usuario.id:
         self.listaUsuarios.remove(usuario)
         print("Usuário removido.")
         return
@@ -39,7 +39,7 @@ class controleUsuarios:
     id = int(input("Isira o ID do usuário: "))
 
     for usuario in self.listaUsuarios:
-      if id == self.usuario.id:
+      if id == usuario.id:
         return usuario
 
       print("Operação não realizada. Usuário não cadastrado!\n")
