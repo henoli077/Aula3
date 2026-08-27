@@ -5,12 +5,12 @@ class controleProjetos:
     self.listaProjetos = []
     self.controleUsuarios = controleUsuarios
 
-  def criarProjeto(self, usuario):
+  def criarProjeto(self):
     nome = input()
 
     descricao = input()
 
-    idUsuario = self.controleUsuarios.buscarUsuario(usuario).id
+    idUsuario = self.controleUsuarios.buscarUsuario().id
 
     projeto = Projeto(nome, descricao, idUsuario)
 
