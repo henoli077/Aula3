@@ -29,7 +29,7 @@ class controleProjetos:
     id = int(input("Isira o ID do projeto a ser removido: "))
 
     for projeto in self.listaProjetos:
-      if id == self.projeto.id:
+      if id == projeto.id:
         self.listaProjetos.remove(projeto)
         print("Projeto removido.")
         return
@@ -40,7 +40,7 @@ class controleProjetos:
     id = int(input("Isira o ID do projeto: "))
 
     for projeto in self.listaProjetos:
-      if id == self.projeto.id:
+      if id == projeto.id:
         return projeto
 
       print("Operação não realizada. projeto não cadastrado!\n")
