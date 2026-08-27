@@ -19,7 +19,11 @@ while(opMenu != 9):
     case 3:
       controleUsuarios.removerUsuario()
     case 4:
-      controleUsuarios.buscarUsuario()
+      usuario = controleUsuarios.buscarUsuario()
+      print("ID: ", usuario.id)
+      print("Nome: ", usuario.nome)
+      print("E-mail: ", usuario.email)
+      print("\n\n")
     case 5:
       controleProjetos.criarProjeto()
     case 6:
@@ -27,7 +31,12 @@ while(opMenu != 9):
     case 7:
       controleProjetos.removerProjeto()
     case 8:
-      controleProjetos.buscarProjeto()
+      projeto = controleProjetos.buscarProjeto()
+      print("ID do projeto: ", projeto.id)
+      print("Nome do projeto: ", projeto.nome)
+      print("Descrição do projeto: ", projeto.descricao)
+      print("Data de criação do projeto: ", projeto.dataCriacao)
+      print("ID do usuário proprietário do projeto: ", projeto.idUsuario)
     case 9:
       print("Programa finalizado!")
     case _:
