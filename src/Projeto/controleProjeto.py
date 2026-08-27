@@ -6,9 +6,9 @@ class controleProjetos:
     self.controleUsuarios = controleUsuarios
 
   def criarProjeto(self):
-    nome = input()
+    nome = input("Insira o nome do projeto: ")
 
-    descricao = input()
+    descricao = input("Insira a descrição do projeto")
 
     idUsuario = self.controleUsuarios.buscarUsuario().id
 
